@@ -29,4 +29,4 @@ RUN \
 ENV JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV JAVA_HOME $JAVA8_HOME
 ENV ANDROID_HOME /opt/android-sdk-linux
-ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$GRADLE_HOME/bin
+ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

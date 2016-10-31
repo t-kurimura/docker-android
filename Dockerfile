@@ -25,13 +25,6 @@ RUN \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter platform-tools,build-tools-23.0.2,build-tools-23.0.3,build-tools-24.0.0,build-tools-24.0.2,android-23,android-24 && \
   echo y | /opt/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-google_play_services,extra-google-m2repository,extra-android-m2repository
 
-# Install Gradle
-RUN \
-  cd /tmp && \
-  curl -L -O http://services.gradle.org/distributions/gradle-2.10-all.zip && \
-  unzip gradle-2.10-all.zip -d /opt && \
-  rm gradle-2.10-all.zip
-
 # Setup Environment
 ENV JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV JAVA7_HOME /usr/lib/jvm/java-7-openjdk-amd64

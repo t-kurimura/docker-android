@@ -11,9 +11,9 @@ RUN \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
   libgl1-mesa-dev libxml2-utils xsltproc unzip
 
-# Install Java8, Java7, Java6
+# Install Java8, Java7
 RUN \
-  apt-get install -y openjdk-8-jdk openjdk-7-jdk openjdk-6-jdk
+  apt-get install -y openjdk-8-jdk openjdk-7-jdk
 
 # Install Android SDK
 RUN \
@@ -28,7 +28,6 @@ RUN \
 # Setup Environment
 ENV JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV JAVA7_HOME /usr/lib/jvm/java-7-openjdk-amd64
-ENV JAVA6_HOME /usr/lib/jvm/java-6-openjdk-amd64
 ENV JAVA_HOME $JAVA8_HOME
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV GRADLE_HOME /opt/gradle-2.10

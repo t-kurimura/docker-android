@@ -2,9 +2,14 @@ FROM ubuntu:15.04
 
 MAINTAINER yuyakaido
 
-# Install Java8
+# Install basic environment
 RUN \
   apt-get update -y && \
+  apt-get install -y curl && \
+  apt-get install -y openjdk-8-jdk
+
+# Install Java
+RUN \
   apt-get install -y openjdk-8-jdk
 
 # Install Android SDK
@@ -21,7 +26,7 @@ RUN \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-google_play_services
 
-# Setup Environment
+# Setup environment variables
 ENV JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV JAVA_HOME $JAVA8_HOME
 ENV ANDROID_HOME /usr/local/android-sdk-linux

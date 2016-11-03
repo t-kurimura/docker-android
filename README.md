@@ -1,5 +1,7 @@
 # docker-android
 
+Dockerfile to build Android application
+
 # Basic environment
 - curl
 - git

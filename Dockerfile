@@ -20,8 +20,10 @@ RUN \
   rm android-sdk_r24.4.1-linux.tgz && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter tools && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter platform-tools && \
+  echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-25.0.0 && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-24.0.2 && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter android-24 && \
+  echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter android-25 && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-android-m2repository && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-google_play_services

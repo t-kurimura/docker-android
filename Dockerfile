@@ -6,7 +6,7 @@ MAINTAINER yuyakaido
 RUN \
   apt-get update -y && \
   apt-get install -y curl && \
-  apt-get install -y git && \
+  apt-get install -y git
 
 # Install Java
 RUN \

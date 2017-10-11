@@ -18,6 +18,7 @@ Dockerfile to build Android application
 - build-tools-25.0.0
 - build-tools-25.0.1
 - build-tools-25.0.2
+- build-tools-25.0.3
 - android-25
 - extra-android-m2repository
 - extra-google-m2repository

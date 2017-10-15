@@ -15,7 +15,6 @@ Dockerfile to build Android application
 
 - tools
 - platform-tools
-- build-tools-25.0.1
 - build-tools-25.0.2
 - build-tools-25.0.3
 - android-25

@@ -21,6 +21,7 @@ RUN \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter tools && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter platform-tools && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-25.0.3 && \
+  echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-26.0.2 && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter android-25 && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter android-26 && \
   echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-android-m2repository && \

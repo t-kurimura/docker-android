@@ -5,7 +5,6 @@ Dockerfile to build Android application
 # Basic environment
 
 - curl
-- unzip
 - git
 
 # Java
